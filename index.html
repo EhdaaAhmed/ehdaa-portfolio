@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ehdaa Ahmed - Front-End Developer Portfolio">
+  <title>Ehdaa Ahmed | Front-End Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="home">
+    <nav class="navbar container">
+      <a class="logo" href="#home">E<span>A</span>.</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+    </nav>
+
+    <section class="hero container">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Ehdaa <span>Ahmed</span></h1>
+        <h2>Front-End Developer</h2>
+        <p class="hero-description">
+          I create modern, attractive and user-friendly websites by combining
+          clean design with simple and enjoyable user experiences.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#projects">View My Work</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/EhdaaAhmed" aria-label="GitHub">GH</a>
+          <a href="https://www.linkedin.com/in/ehdaa-ahmed-68004436a/" aria-label="LinkedIn">in</a>
+          <a href="mailto:ehdaaafouad48@gmail.com" aria-label="Email">@</a>
+        </div>
+      </div>
+
+      <div class="hero-photo reveal">
+        <div class="photo-frame">
+          <img src="images/profile.jpeg" alt="Ehdaa Ahmed profile photo"
+               onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex';">
+          <div class="photo-placeholder" id="photoPlaceholder">
+            <div>
+              <span>YOUR PHOTO</span>
+              <small>Put your photo here</small>
+            </div>
+          </div>
+        </div>
+        <div class="floating-card">
+          <strong>CS Student</strong>
+          <span>Learning & Building 🚀</span>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section about" id="about">
+      <div class="container two-col">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>A little bit <span>about me.</span></h2>
+        </div>
+        <div class="about-content reveal">
+          <p>
+            I'm a Computer Science student at Assiut University, currently
+            focusing on Front-End Development. I enjoy turning ideas into
+            clean and modern interfaces and I love working with designs,
+            colors and details.
+          </p>
+          <p>
+            I'm continuously improving my skills through practice and projects,
+            with a strong focus on learning quickly, staying organized and
+            creating a better user experience.
+          </p>
+          <div class="mini-info">
+            <div><strong>3rd</strong><span>Year Student</span></div>
+            <div><strong>3.69</strong><span>GPA</span></div>
+            <div><strong>∞</strong><span>Learning</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">My Skills</p>
+          <h2>Tools I <span>work with.</span></h2>
+          <p>Technologies and concepts I'm learning and practicing.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal"><div class="skill-icon">H</div><h3>HTML</h3><p>Semantic & structured pages</p></div>
+          <div class="skill-card reveal"><div class="skill-icon">C</div><h3>CSS</h3><p>Responsive & modern UI</p></div>
+          <div class="skill-card reveal"><div class="skill-icon">JS</div><h3>JavaScript</h3><p>Interactive web experiences</p></div>
+          <div class="skill-card reveal"><div class="skill-icon">C++</div><h3>C++</h3><p>Programming fundamentals</p></div>
+          <div class="skill-card reveal"><div class="skill-icon">C#</div><h3>C#</h3><p>OOP & application basics</p></div>
+          <div class="skill-card reveal"><div class="skill-icon">SQL</div><h3>Database & SQL</h3><p>Queries & database concepts</p></div>
+          <div class="skill-card reveal"><div class="skill-icon">OOP</div><h3>OOP</h3><p>Object-oriented programming</p></div>
+          <div class="skill-card reveal"><div class="skill-icon">DS</div><h3>Data Structures</h3><p>Core problem-solving concepts</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">My Projects</p>
+          <h2>Things I've <span>built.</span></h2>
+          <p>Replace the links below with your real GitHub repositories.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-image todo-image"><span>TO-DO</span></div>
+            <div class="project-content">
+              <p class="project-number">01 — Web App</p>
+              <h3>To-Do List</h3>
+              <p>A clean task management interface with dashboard, today's tasks, overdue tasks, search and sorting.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <a href="https://ehdaaahmed.github.io/taskly-todo-app/" class="project-link">View Project ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image car-image"><span>CAR CALCULATOR</span></div>
+            <div class="project-content">
+              <p class="project-number">02 — Web App</p>
+              <h3>Car Installments Calculator</h3>
+              <p>A simple interface for entering car details, down payment and duration to calculate installments.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <a href="https://ehdaaahmed.github.io/carora-car-installments-calculator/" class="project-link">View Project ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image future-image"><span>YOUR NEXT IDEA</span></div>
+            <div class="project-content">
+              <p class="project-number">03 — Coming Soon</p>
+              <h3>Next Project</h3>
+              <p>Use this card for your next Front-End project and keep growing your portfolio.</p>
+              <div class="tags"><span>UI</span><span>Front-End</span><span>Creative</span></div>
+              <a href="#contact" class="project-link">Let's Build ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Education</p>
+          <h2>My <span>academic journey.</span></h2>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="date">Current</span>
+            <h3>Assiut University</h3>
+            <h4>Faculty of Computers and Information — Computer Science</h4>
+            <p>Third-year student with a GPA of 3.69, developing strong foundations in programming, data structures, databases and web development.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-box reveal">
+        <div>
+          <p class="eyebrow">Get In Touch</p>
+          <h2>Let's create something <span>great.</span></h2>
+          <p>Have an idea or want to connect? I'd love to hear from you.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:ehdaaafouad48@gmail.com">Email Me</a>
+          <a class="email-text" href="mailto:ehdaaafouad48@gmail.com">ehdaaafouad48@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© 2026 Ehdaa Ahmed. Built with passion & code.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
